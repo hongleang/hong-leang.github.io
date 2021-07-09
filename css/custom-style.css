@@ -1,0 +1,170 @@
+/* Import styles */
+@import url('./pages/profile-wrapper.css');
+@import url('./pages/services-panel.css');
+@import url('./pages/projects-panel.css');
+@import url('./pages/contacts-panel.css');
+@import url('./components/navigation.css');
+/* Roots css */
+:root {
+	/* Colors */
+	/* Fonts */
+	--main-serif-font: 'Nixie One', sans-serif;
+	--main-sans-serif-font: 'Source Sans Pro', sans-serif;
+}
+
+/* CSS Document */
+html,
+body {
+	font-family: var(--main-sans-serif-font);
+	font-size: 14px;
+	font-weight: 400;
+}
+
+/* common style's */
+a {
+	color: #9d8db1;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+a:hover,
+a:focus,
+a:active {
+	text-decoration: none;
+	outline: none;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 24px;
+}
+
+/* button style */
+.btn,
+.btn.disabled {
+	background: #e1306c;
+	color: #ffffff;
+	border: 0;
+	border-radius: 10px;
+	font-size: 16px;
+	padding: 10px 30px;
+	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+	text-transform: uppercase;
+}
+
+.btn:hover {
+	background: #e1306c;
+	color: #ffffff;
+	box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+	opacity: .5;
+}
+
+/* form style */
+label {
+	font-weight: 400;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-control {
+	height: 40px;
+	font-size: 18px;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	border-radius: 0px;
+	padding: 6px 0px;
+	box-shadow: none;
+	font-weight: 100;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.form-control:focus {
+	border-color: #666666;
+	outline: 0;
+	box-shadow: none;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.left-wrapper,
+.right-wrapper {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+/* Pannel wrapper css */
+.pannel-wrapper {
+	padding: 40px;
+}
+
+/* Tab pane control */
+.tab-pane {
+	display: none;
+	opacity: 0;
+}
+
+.tab-pane.active {
+	display: block;
+	opacity: 1;
+	transition: opacity 3s ease-in;
+}
+
+
+/* media query for tab */
+@media (max-width: 900px) {
+	.profile-wrapper {
+		position: relative;
+		width: 100%;
+		height: 300px;
+		padding: 15px;
+	}
+
+	.page-navigation {
+		margin: 0;
+	}
+
+	.pannel-wrapper {
+		padding: 20px;
+	}
+}
+
+/* media query for Mobile & Tablet */
+@media (max-width: 767px) {
+	.hamburger-btn {
+		position: fixed;
+		top: 10px;
+		right: 20px;
+		background-color: #ffffff;
+		border-radius: 50%;
+		z-index: 10000;
+	}
+
+	.right-wrapper {
+		position: relative;
+		padding: 0;
+		top: 270px;
+	}
+
+	.web-techs span {
+		margin-bottom: 20px;
+	}
+}

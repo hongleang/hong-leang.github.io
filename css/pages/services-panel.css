@@ -1,0 +1,44 @@
+/* Services pannel */
+.tab-pane h4 {
+	font-weight: 800;
+	margin: 20px 10px;
+}
+
+#services p {
+	margin: 5px 10px;
+}
+
+.web-techs {
+	margin: 20px 0;
+}
+.web-techs span {
+	padding: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+.skills-box {
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, 0.04);
+	padding: 15px 20px;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 30px;
+	border-radius: 4px;
+	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.08);
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+.skills-box:hover {
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+.skills-box .skill-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-height: 80px;
+}
+
+

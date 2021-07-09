@@ -154,10 +154,14 @@ label {
 	.right-wrapper {
 		position: relative;
 		padding: 0;
-		top: 300px;
+		top: 550px;
 	}
 
 	.web-techs span {
 		margin-bottom: 20px;
+	}
+	.contact-wrapper {
+		position: relative;
+		top: 400px;
 	}
 }

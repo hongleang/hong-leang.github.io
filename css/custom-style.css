@@ -4,6 +4,8 @@
 @import url('./pages/projects-panel.css');
 @import url('./pages/contacts-panel.css');
 @import url('./components/navigation.css');
+@import url('./components/hamburger-btn.css');
+
 /* Roots css */
 :root {
 	/* Colors */
@@ -149,19 +151,10 @@ label {
 
 /* media query for Mobile & Tablet */
 @media (max-width: 767px) {
-	.hamburger-btn {
-		position: fixed;
-		top: 10px;
-		right: 20px;
-		background-color: #ffffff;
-		border-radius: 50%;
-		z-index: 10000;
-	}
-
 	.right-wrapper {
 		position: relative;
 		padding: 0;
-		top: 270px;
+		top: 300px;
 	}
 
 	.web-techs span {
